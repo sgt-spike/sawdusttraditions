@@ -1,0 +1,20 @@
+fonts:
+    body: 'Montserrat', arial, sans-serif;
+    Heading: 'Yeseva One', Georgia, serif;
+    about us: 'Libre Baskerville', Georgia, serif;
+
+colors:
+	#855729
+
+INSERT INTO `photos` (`photo_id`, `photo_name`, `photo_link`, `photo_category`, `photo_desc`, `photo_orientation`) 
+     VALUES (NULL, 'furniture1.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'wide'), 
+            (NULL, 'furniture2.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture3.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture4.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture5.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'wide'), 
+            (NULL, 'furniture6.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture7.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture8.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'), 
+            (NULL, 'furniture9.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'wide'), 
+            (NULL, 'furniture10.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall'),
+            (NULL, 'furniture11.jpg', 'img/project_gallery/furniture/', 'furniture', '', 'tall');

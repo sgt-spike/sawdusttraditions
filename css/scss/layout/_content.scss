@@ -1,0 +1,381 @@
+.nav {
+    background: $medium-color;
+}
+
+.logo {
+    background: #ffffff;
+}
+
+.inner-container {
+    text-align: center;
+}
+
+.logo-photo {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-h1 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.logo-h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.25;
+}
+
+.logo-h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.store-photo {
+    width: 100rem;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.aboutUs-img {
+    width: 75rem;
+    height: 25rem;
+    object-fit: contain;
+}
+
+
+
+.creations {
+    max-height: 75rem;
+}
+
+.photoGallery-container {
+    color: #ffffff;
+    #galleryH3 {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        font-weight: 100;
+        font-size: 5.5rem;
+        text-align: center;
+        margin: 7rem auto;
+        position: relative;
+        max-width: 40rem;
+        background: $base-color;
+        &::before {
+            content: "";
+            display: block;
+            width: 75rem;
+            height: .02rem;
+            background: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: -2;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 75rem;
+            height: .02rem;
+            background: #ffffff;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: -2;
+        }
+    }
+    #galleryLink {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      a {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        text-align: center;
+        font-size: 2.5rem;
+        color: $dark-color;
+        text-decoration: none;
+      }
+    }
+}
+
+.photoGallery {
+    width: 100%;
+	margin: 0 auto;
+}
+
+.photoGallery {
+    perspective: 2500;
+    -webkit-perspective: 2500;
+    width: 100%;
+    margin: 15rem auto;
+    perspective-origin: 50% 150px;
+    -webkit-perspective-origin: 50% 150px;
+    transition: perspective, 1s;
+    -o-transition: -o-perspective, 1s;
+    -moz-transition: -moz-perspective, 1s;
+    -webkit-transition: -webkit-perspective, 1s;
+}
+
+.photos:hover {
+    animation-play-state:paused;
+    -o-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+}
+
+@-webkit-keyframes spin {
+	from {
+    transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+		-webkit-transform: rotateY(0);
+	}
+	to {
+    transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+		-webkit-transform: rotateY(-360deg);
+	}
+}
+
+.photos {
+    margin: 0 auto;
+    height: 30rem;
+    width: 40rem;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    animation: spin $carousel-speed infinite linear;
+    -moz-animation: spin $carousel-speed infinite linear;
+    -o-animation: spin $carousel-speed infinite linear;
+    -webkit-animation: spin $carousel-speed infinite linear;
+}
+
+.image {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+	font-size: 20em;
+	color: #fff;
+}
+
+.photos > .i1 {
+  transform: rotateY(0deg) translateZ($img-transZ);
+  -moz-transform: rotateY(0deg) translateZ($img-transZ);
+  -o-transform: rotateY(0deg) translateZ($img-transZ);
+  -ms-transform: rotateY(0deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(0deg) translateZ($img-transZ);
+}
+.photos > .i2 {
+  transform: rotateY(32.7deg) translateZ($img-transZ);
+  -moz-transform: rotateY(32.7deg) translateZ($img-transZ);
+  -o-transform: rotateY(32.7deg) translateZ($img-transZ);
+  -ms-transform: rotateY(32.7deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(32.7deg) translateZ($img-transZ);
+}
+.photos > .i3 {
+  transform: rotateY(65.4deg) translateZ($img-transZ);
+  -moz-transform: rotateY(65.4deg) translateZ($img-transZ);
+  -o-transform: rotateY(65.4deg) translateZ($img-transZ);
+  -ms-transform: rotateY(65.4deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(65.4deg) translateZ($img-transZ);
+}
+.photos > .i4 {
+  transform: rotateY(98.1deg) translateZ($img-transZ);
+  -moz-transform: rotateY(98.1deg) translateZ($img-transZ);
+  -o-transform: rotateY(98.1deg) translateZ($img-transZ);
+  -ms-transform: rotateY(98.1deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(98.1deg) translateZ($img-transZ);
+}
+.photos > .i5 {
+  transform: rotateY(130.8deg) translateZ($img-transZ);
+  -moz-transform: rotateY(130.8deg) translateZ($img-transZ);
+  -o-transform: rotateY(130.8deg) translateZ($img-transZ);
+  -ms-transform: rotateY(130.8deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(130.8deg) translateZ($img-transZ);
+}
+.photos > .i6 {
+  transform: rotateY(163.5deg) translateZ($img-transZ);
+  -moz-transform: rotateY(163.5deg) translateZ($img-transZ);
+  -o-transform: rotateY(163.5deg) translateZ($img-transZ);
+  -ms-transform: rotateY(163.5deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(163.5deg) translateZ($img-transZ);
+}
+.photos > .i7 {
+  transform: rotateY(196.2deg) translateZ($img-transZ);
+  -moz-transform: rotateY(196.2deg) translateZ($img-transZ);
+  -o-transform: rotateY(196.2deg) translateZ($img-transZ);
+  -ms-transform: rotateY(196.2deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(196.2deg) translateZ($img-transZ);
+}
+.photos > .i8 {
+  transform: rotateY(228.9deg) translateZ($img-transZ);
+  -moz-transform: rotateY(228.9deg) translateZ($img-transZ);
+  -o-transform: rotateY(228.9deg) translateZ($img-transZ);
+  -ms-transform: rotateY(228.9deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(228.9deg) translateZ($img-transZ);
+}
+.photos > .i9 {
+  transform: rotateY(261.6deg) translateZ($img-transZ);
+  -moz-transform: rotateY(261.6deg) translateZ($img-transZ);
+  -o-transform: rotateY(261.6deg) translateZ($img-transZ);
+  -ms-transform: rotateY(261.6deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(261.6deg) translateZ($img-transZ);
+}
+.photos > .i10 {
+  transform: rotateY(294.3deg) translateZ($img-transZ);
+  -moz-transform: rotateY(294.3deg) translateZ($img-transZ);
+  -o-transform: rotateY(294.3deg) translateZ($img-transZ);
+  -ms-transform: rotateY(294.3deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(294.3deg) translateZ($img-transZ);
+}
+
+.photos > .i12 {
+  transform: rotateY(327deg) translateZ($img-transZ);
+  -moz-transform: rotateY(327deg) translateZ($img-transZ);
+  -o-transform: rotateY(327deg) translateZ($img-transZ);
+  -ms-transform: rotateY(327deg) translateZ($img-transZ);
+  -webkit-transform: rotateY(327deg) translateZ($img-transZ);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.store-container {
+    background: $medium-color;
+    color: $light-color;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.store-heading {
+  font-size: 3rem;
+}
+
+.howto {
+  font-size: 1rem;
+}
+
+.image-container {
+  justify-self: center;
+  align-self: center;
+  > img {
+    display: block;
+  }
+  .store-photo {
+    max-width: 95%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutUs-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.aboutUs-container {
+    background: $base-color;
+    text-align: center;
+    .about-us {
+      font-family: 'Libre Baskerville', Georgia, serif;
+      background-color: $light-color;
+      color: #ffffff;
+      padding: 0 10rem;
+      h2 {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        font-weight: 100;
+        font-size: 4.5rem;
+        text-align: center;
+        margin: 2.5rem auto;
+        position: relative;
+        max-width: 60rem;
+        background: $light-color;
+        display: block;
+        // &::before {
+        //   content: "";
+        //   display: block;
+        //   width: 75rem;
+        //   height: .02rem;
+        //   background: #ffffff;
+        //   position: absolute;
+        //   left: 0;
+        //   top: 50%;
+        //   z-index: -2;
+        // }
+        // &::after {
+        //     content: "";
+        //     display: block;
+        //     width: 75rem;
+        //     height: .02rem;
+        //     background: #ffffff;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     z-index: -2;
+        // }
+      }
+      .about-inner {
+        display: block;
+        h3 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+}
+
+.project-gallery {
+  margin: 5rem 20rem;
+}
+
+.gallery-section-header {
+  font-size: 3.5rem;
+  text-align: center;
+  color: $extra-light-color;
+  border-bottom:.2rem solid $extra-light-color;
+  padding-bottom: .5rem;
+}
+
+.gallery-fig {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    // border-top: .5rem solid $extra-light-color;
+    // border-left: .5rem solid $extra-light-color;
+    // &:nth-child(-n+2) {
+    //   border-top: none;
+    // }
+    // &:nth-child(odd) {
+    //   border-left: none;
+    // }
+    > figcaption {
+      text-align: center;
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

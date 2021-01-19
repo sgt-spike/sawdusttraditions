@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.6%;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+body {
+    font-family: 'Montserrat', arial, sans-serif;
+    background: $base-color;
+    margin: 0;
+    padding: 0;
+    line-height: 2.4rem;
+}
+
