@@ -18,7 +18,7 @@
                     <li class="list-item"><a href="index.php">Home</a></li>
                     <li class="list-item"><a href="contact.php" class="link">Contact</a></li>
                     <li class="list-item"><a href="gallery.php" class="link">Gallery</a></li>
-                    <li class="list-item shop"><a href="shop.sawdusttraditions.com" class="link">Shop</a></li>
+                    <li class="list-item shop"><a href="https://shop.sawdusttraditions.com" class="link">Shop</a></li>
                 </ul> 
             </div>
         </section>
