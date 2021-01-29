@@ -6,6 +6,7 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo3.ico" type="image/x-icon">
     <title>Sawdust Traditions</title>
 </head>
 <body>
