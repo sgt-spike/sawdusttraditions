@@ -409,6 +409,13 @@ main {
       grid-template-columns: 100%;
 }
 
+.nav-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .inner-container {
   display: -ms-grid;
   display: grid;
@@ -526,6 +533,7 @@ footer .webmaster {
 .nav-list .list-item {
   display: inline;
   margin: 1.5rem;
+  text-align: center;
 }
 
 .nav-list .list-item a {
