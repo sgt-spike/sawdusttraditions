@@ -23,11 +23,9 @@ function createSwitch(className, onClickValue) {
     let myIcon = document.createElement("i");
     //photoSwitchA.attributes.setNameItem(photoSwitchOnClick);
     if (photoSwitchA.className == "prev") {
-        myIcon.className = "fas fa-angle-left"
-        myIcon.innerHTML = "&#xf104;";
+        myIcon.className = "fas fa-chevron-left"
     } else if (photoSwitchA.className == "next") {
-        myIcon.className = "fas fa-angle-right"
-        myIcon.innerHTML = "&#xf105;";
+        myIcon.className = "fas fa-chevron-right"
     }
     photoSwitchA.appendChild(myIcon);
     return photoSwitchA;
