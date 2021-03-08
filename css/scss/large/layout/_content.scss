@@ -1,0 +1,304 @@
+@media screen and (min-width: $largeMinWidth) {
+  .nav {
+      background: $medium-color;
+  }
+
+  .logo {
+      background: #ffffff;
+  }
+
+  .inner-container {
+      text-align: center;
+  }
+
+  .logo-photo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .logo-h1 {
+      font-family: 'Yeseva One', cursive;
+      font-weight: 100;
+      font-size: 5.5rem;
+      line-height: 1.2;
+      letter-spacing: .1rem;
+      margin-bottom: 0;
+      a {
+          text-decoration: none;
+          color: #000000;
+      }
+  }
+
+  .logo-h2 {
+      font-size: 3rem;
+      font-weight: lighter;
+      line-height: 1.25;
+  }
+
+  .store-photo {
+      width: 100rem;
+      height: 25rem;
+      object-fit: contain;
+  }
+
+  .aboutUs-img {
+      width: 75rem;
+      height: 25rem;
+      object-fit: contain;
+  }
+
+  .photoGallery-container {
+    display: grid;
+    grid: auto 1fr/ 1fr;
+    place-content: center;
+    color: #ffffff;
+    margin: 2rem auto;
+  }
+
+  .photoGallery {
+    display: inline-block;
+    position: relative;
+    vertical-align: center;
+    max-width: 75%;
+    width: 50%;
+    height: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+  #galleryH3 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 100;
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 2rem auto;
+    position: relative;
+    max-width: 40rem;
+    background: $base-color;
+    &::before {
+        content: "";
+        display: block;
+        width: 75rem;
+        height: .02rem;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 75rem;
+        height: .02rem;
+        background: #ffffff;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+}
+
+// .photos {
+//   display: inline-block;
+//   position: relative;
+//   > * {
+//     box-sizing: border-box;
+//   }
+// }
+
+.image {
+  display: inline-block;
+  margin: auto;
+  > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  text-align: center;
+  i {
+    font-size: 3rem;
+  }
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.miniImgRow {
+  display: grid;
+  grid: 1fr / auto-flow 1fr;
+  place-content: center;
+  margin: .5rem 2rem 0 2rem;
+  // content: "";
+  // display: inline-block;
+  // clear: both;
+}
+
+.miniImgColumn {
+  float: left;
+  // width: 16.66%;
+  width: 50%;
+}
+
+.miniImg {
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.active,
+.miniImg:hover {
+  opacity: 1;
+}
+
+.store-container {
+    background: $medium-color;
+    color: $light-color;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+  .store-heading {
+    font-size: 3rem;
+  }
+
+  .howto {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    justify-self: center;
+    align-self: center;
+    > img {
+      display: block;
+    }
+    .store-photo {
+      max-width: 95%;
+      height: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .aboutUs-img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .aboutUs-container {
+      background: $base-color;
+      text-align: center;
+      .about-us {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        background-color: $light-color;
+        color: #ffffff;
+        padding: 0 10rem;
+        h2 {
+          font-family: 'Libre Baskerville', Georgia, serif;
+          font-weight: 100;
+          font-size: 4.5rem;
+          text-align: center;
+          margin: 2.5rem auto;
+          position: relative;
+          max-width: 60rem;
+          background: $light-color;
+          display: block;
+          // &::before {
+          //   content: "";
+          //   display: block;
+          //   width: 75rem;
+          //   height: .02rem;
+          //   background: #ffffff;
+          //   position: absolute;
+          //   left: 0;
+          //   top: 50%;
+          //   z-index: -2;
+          // }
+          // &::after {
+          //     content: "";
+          //     display: block;
+          //     width: 75rem;
+          //     height: .02rem;
+          //     background: #ffffff;
+          //     position: absolute;
+          //     right: 0;
+          //     top: 50%;
+          //     z-index: -2;
+          // }
+        }
+        .about-inner {
+          display: block;
+          h3 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+  }
+
+  .project-gallery {
+    margin: 5rem 20rem;
+  }
+
+  .gallery-section-header {
+    font-size: 3.5rem;
+    text-align: center;
+    color: $extra-light-color;
+    border-bottom:.2rem solid $extra-light-color;
+    padding-bottom: .5rem;
+  }
+
+  .gallery-fig {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 2rem;
+      // border-top: .5rem solid $extra-light-color;
+      // border-left: .5rem solid $extra-light-color;
+      // &:nth-child(-n+2) {
+      //   border-top: none;
+      // }
+      // &:nth-child(odd) {
+      //   border-left: none;
+      // }
+      > figcaption {
+        text-align: center;
+      }
+  }
+
+  .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}  

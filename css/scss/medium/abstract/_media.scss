@@ -1,0 +1,35 @@
+@media screen {
+    body {
+        line-height: 2rem;
+    }
+    main {
+        grid-template: [row1-start]"nav" auto [row1-end] 
+                        [row2-start]"logo" auto [row2-end] 
+                        [row3-start] "main" auto [row3-end]
+                        [row4-start] "footer" auto [row4-end] / auto;
+    }
+    .nav {
+        justify-content: center;
+        grid-area: nav;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-list {
+        gap: 0;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        grid-area: logo;
+        grid: 1fr 1fr / auto;
+    }
+    .logo-photo {
+        display: initial;
+        width: 200%;
+        height: 200%;
+    }
+    .main {
+        grid-area: main;
+    }
+}

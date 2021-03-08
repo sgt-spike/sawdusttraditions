@@ -1,0 +1,171 @@
+@media screen and (min-width: 0px) and (max-width: $smallMaxWidth) {
+  .nav {
+    background: $medium-color;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    background: #ffffff;
+  }
+
+  .inner-container {
+    text-align: center;
+  }
+
+  .logo-photo {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .logo-h1 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+  }
+
+  .logo-h2 {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      line-height: 1.25;
+  }
+
+  .creations {
+    max-height: 75rem;
+  }
+
+  .photoGallery-container {
+    color: #ffffff;
+    #galleryH3 {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        font-weight: 100;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        max-width: 40rem;
+        background: $base-color;
+    }
+    .photoGallery {
+      padding: 1rem;
+    }
+  }
+
+  .store-photo {
+      width: 100%;
+      height: auto;
+      //object-fit: contain;
+  }
+
+  .aboutUs-img {
+      width: 75rem;
+      height: 25rem;
+      object-fit: contain;
+  }
+
+  .store-container {
+      background: $medium-color;
+      color: $light-color;
+      text-align: center;
+      padding: 5rem 0;
+  }
+
+  .store-heading {
+    font-size: 2rem;
+  }
+
+  .howto {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    justify-self: center;
+    align-self: center;
+    > img {
+      display: block;
+    }
+    .store-photo {
+      max-width: 75%;
+      //height: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .aboutUs-img {
+      width: 100%;
+      height: 75%;
+    }
+  }
+
+  .aboutUs-container {
+      background: $base-color;
+      text-align: center;
+      .about-us {
+        font-family: 'Libre Baskerville', Georgia, serif;
+        background-color: $light-color;
+        color: #ffffff;
+        padding: 0 1rem;
+        h2 {
+          font-family: 'Libre Baskerville', Georgia, serif;
+          font-weight: 100;
+          font-size: 3rem;
+          text-align: center;
+          margin: 2.5rem auto;
+          position: relative;
+          //max-width: 60rem;
+          background: $light-color;
+          display: block;
+        }
+        .about-inner {
+          display: block;
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+  }
+
+  .project-gallery {
+    margin: 5rem 20rem;
+  }
+
+  .gallery-section-header {
+    font-size: 3.5rem;
+    text-align: center;
+    color: $extra-light-color;
+    border-bottom:.2rem solid $extra-light-color;
+    padding-bottom: .5rem;
+  }
+
+  .gallery-fig {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 2rem;
+      // border-top: .5rem solid $extra-light-color;
+      // border-left: .5rem solid $extra-light-color;
+      // &:nth-child(-n+2) {
+      //   border-top: none;
+      // }
+      // &:nth-child(odd) {
+      //   border-left: none;
+      // }
+      > figcaption {
+        text-align: center;
+      }
+  }
+
+  .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}

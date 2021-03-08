@@ -1,20 +1,20 @@
-.main {
-    display: grid;
-    grid-template-rows: max-content, max-content, max-content;
-    grid-template-columns: 100%;
-}
-
 main {
     display: grid;
     grid-template-rows: auto, 25rem, 50rem, 50rem, 50rem;
     grid-template-columns: 100%;
 }
 
-.nav-list {
+.main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content, max-content, max-content;
+    grid-template-columns: 100%;
 }
 
+.nav-list {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    //gap: 15rem;
+}
 .inner-container {
     display: grid;
     grid-template-columns: 100%;
@@ -22,11 +22,9 @@ main {
     align-content: center;
 }
 
-.logo-container {
+.logo {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: max-content;
-    align-content: stretch;
+    grid: auto / 1fr 2fr;
 }
 
 .store-container {
