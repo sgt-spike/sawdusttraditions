@@ -39,7 +39,7 @@
 
         echo    '<div class="gallary-section-container">
                     <h2 class="gallery-section-header">Home Decor</h2>
-                    <div class="gallery-sections stains">';
+                    <div class="gallery-sections home">';
                     if ($results = mysqli_query($conn, $decor)) {
                         while($row = mysqli_fetch_array($results)) {
                             $aspect = "gallery-fig " .$row['photo_orientation'];
@@ -55,7 +55,7 @@
         
         echo    '<div class="gallary-section-container">
                     <h2 class="gallery-section-header">Pets</h2>
-                    <div class="gallery-sections stains">';
+                    <div class="gallery-sections pets">';
                     if ($results = mysqli_query($conn, $pets)) {
                         while($row = mysqli_fetch_array($results)) {
                             $aspect = "gallery-fig " .$row['photo_orientation'];
@@ -71,7 +71,7 @@
 
         echo    '<div class="gallary-section-container">
                     <h2 class="gallery-section-header">Furniture</h2>
-                    <div class="gallery-sections stains">';
+                    <div class="gallery-sections furniture">';
                     if ($results = mysqli_query($conn, $furniture)) {
                         while($row = mysqli_fetch_array($results)) {
                             $aspect = "gallery-fig " .$row['photo_orientation'];

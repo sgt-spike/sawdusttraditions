@@ -180,16 +180,14 @@
     display: block;
   }
   .image-container .store-photo {
-    max-width: 95%;
-    height: 95%;
+    width: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
   .image-container .aboutUs-img {
     width: 100%;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
   }
   .aboutUs-container {
     background: #855729;
@@ -199,7 +197,7 @@
     font-family: 'Libre Baskerville', Georgia, serif;
     background-color: #ca9e73;
     color: #ffffff;
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
   .aboutUs-container .about-us h2 {
     font-family: 'Libre Baskerville', Georgia, serif;
@@ -245,6 +243,15 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .stains figure {
+    margin: auto;
+  }
+  .stains figure img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
   }
 }
 
@@ -322,19 +329,13 @@ footer {
   .aboutUs-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid: 1fr/repeat(2, 1fr);
   }
-  .gallery-sections {
+  .home, .pets, .furniture {
     display: -ms-grid;
     display: grid;
     gap: 2rem;
-    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-auto-rows: 20rem;
-    grid-auto-flow: dense;
+    grid: auto-flow dense 15rem/repeat(auto-fit, minmax(20rem, 1fr));
     margin: 5rem;
   }
   .tall {
@@ -347,16 +348,15 @@ footer {
     grid-column: span 2;
     grid-row: span 2;
   }
-  footer {
+  .footer {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: footer;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid: 1fr / 1fr 1fr;
   }
-  footer .webmaster {
+  .footer .webmaster {
     -ms-grid-column-align: end;
         justify-self: end;
   }

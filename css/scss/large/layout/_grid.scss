@@ -48,16 +48,15 @@
 
     .aboutUs-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid: 1fr / repeat(2, 1fr);
     }
 // Gallery Page
-    .gallery-sections {
+    .home, .pets, .furniture {
         display: grid;
         gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-auto-rows: 20rem;
-        grid-auto-flow: dense;
+        grid: auto-flow dense 15rem / repeat(auto-fit, minmax(20rem, 1fr));
+        // grid-auto-rows: 20rem;
+        // grid-auto-flow: dense;
         margin: 5rem;
     }
 
@@ -74,10 +73,10 @@
         grid-row: span 2;
     }
 
-    footer {
+    .footer {
         grid-area: footer;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid: 1fr / 1fr 1fr;
         .webmaster {
             justify-self: end;
         }

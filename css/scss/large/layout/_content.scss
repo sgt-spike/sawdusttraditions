@@ -200,16 +200,14 @@
       display: block;
     }
     .store-photo {
-      max-width: 95%;
-      height: 95%;
+      width: 50%;
+      height: auto;
       margin-left: auto;
       margin-right: auto;
     }
     .aboutUs-img {
       width: 100%;
       height: auto;
-      max-width: 100%;
-      max-height: 100%;
     }
   }
 
@@ -220,7 +218,7 @@
         font-family: 'Libre Baskerville', Georgia, serif;
         background-color: $light-color;
         color: #ffffff;
-        padding: 0 10rem;
+        padding: 0 5rem;
         h2 {
           font-family: 'Libre Baskerville', Georgia, serif;
           font-weight: 100;
@@ -231,28 +229,6 @@
           max-width: 60rem;
           background: $light-color;
           display: block;
-          // &::before {
-          //   content: "";
-          //   display: block;
-          //   width: 75rem;
-          //   height: .02rem;
-          //   background: #ffffff;
-          //   position: absolute;
-          //   left: 0;
-          //   top: 50%;
-          //   z-index: -2;
-          // }
-          // &::after {
-          //     content: "";
-          //     display: block;
-          //     width: 75rem;
-          //     height: .02rem;
-          //     background: #ffffff;
-          //     position: absolute;
-          //     right: 0;
-          //     top: 50%;
-          //     z-index: -2;
-          // }
         }
         .about-inner {
           display: block;
@@ -301,4 +277,13 @@
       height: 100%;
       object-fit: cover;
   }
-}  
+  .stains figure {
+    margin: auto;
+    img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    }
+  }
+}
